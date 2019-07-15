@@ -28,11 +28,11 @@ public class ValidBracketCounter {
 ```
     
 ### Output
-    [Prod] valid amount of bracket '()' is 1
-    [Prod] valid amount of bracket '()()()' is 3
-    [Prod] valid amount of bracket '((()()' is 2
-    [Prod] valid amount of bracket '))((' is 0
-    [Prod] valid amount of bracket '))()((' is 1
+    [Prod] amount of valid bracket '()' is 1
+    [Prod] amount of valid bracket '()()()' is 3
+    [Prod] amount of valid bracket '((()()' is 2
+    [Prod] amount of valid bracket '))((' is 0
+    [Prod] amount of valid bracket '))()((' is 1
      
 
 ## Using Simple Integer
@@ -65,8 +65,8 @@ public class ValidBracketCounter {
 
 ### Output
 
-     [Beta] valid amount of bracket '()' is 1
-     [Beta] valid amount of bracket '()()()' is 3
-     [Beta] valid amount of bracket '((()()' is 2
-     [Beta] valid amount of bracket '))((' is 2
-     [Beta] valid amount of bracket '))()((' is 3
+     [Beta] amount of valid bracket '()' is 1
+     [Beta] amount of valid bracket '()()()' is 3
+     [Beta] amount of valid bracket '((()()' is 2
+     [Beta] amount of valid bracket '))((' is 2
+     [Beta] amount of valid bracket '))()((' is 3
