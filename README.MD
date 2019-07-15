@@ -1,9 +1,7 @@
 
-# Puzzles
+# Valid Bracket Counter
 
-## Valid Bracket Counter
-
-### Using Stack As Counter
+## Using Stack As Counter
 ```java
 public class ValidBracketCounter {
     static int counter(String s) {
@@ -29,7 +27,7 @@ public class ValidBracketCounter {
 }
 ```
     
-#### Output
+### Output
     [Prod] valid amount of bracket '()' is 1
     [Prod] valid amount of bracket '()()()' is 3
     [Prod] valid amount of bracket '((()()' is 2
@@ -37,7 +35,7 @@ public class ValidBracketCounter {
     [Prod] valid amount of bracket '))()((' is 1
      
 
-### Using Simple Integer
+## Using Simple Integer
 This one fails to address Closing bracket first.
 
 ```java
@@ -65,8 +63,7 @@ public class ValidBracketCounter {
 
 ```
 
-
-#### Output
+### Output
 
      [Beta] valid amount of bracket '()' is 1
      [Beta] valid amount of bracket '()()()' is 3
