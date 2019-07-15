@@ -40,6 +40,33 @@ public class ValidBracketCounter {
 ### Using Simple Integer
 This one fails to address Closing bracket first.
 
+```java
+import java.util.Stack;
+
+public class ValidBracketCounter {
+
+    static int counterBetaVersion(String s) {
+        int result = 0;
+        char[] charArray = s.toCharArray();
+        Stack<Character> stack = new Stack<>();
+
+        int stackCounter = 0;
+
+        for (char ch : charArray) {
+            if (ch == '(') {
+                stackCounter++;
+            } else if (ch == ')') {
+                stackCounter--;
+            }
+        }
+        return result = (s.length() - Math.abs(stackCounter)) / 2;
+    }
+}
+
+```
+
+
+#### Output
 
      [Beta] valid amount of bracket '()' is 1
      [Beta] valid amount of bracket '()()()' is 3

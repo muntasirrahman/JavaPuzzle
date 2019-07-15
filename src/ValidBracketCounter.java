@@ -2,20 +2,6 @@ import java.util.Stack;
 
 public class ValidBracketCounter {
 
-    /**
-     [Prod] valid amount of bracket '()' is 1
-     [Prod] valid amount of bracket '()()()' is 3
-     [Prod] valid amount of bracket '((()()' is 2
-     [Prod] valid amount of bracket '))((' is 0
-     [Prod] valid amount of bracket '))()((' is 1
-
-     [Beta] valid amount of bracket '()' is 1
-     [Beta] valid amount of bracket '()()()' is 3
-     [Beta] valid amount of bracket '((()()' is 2
-     [Beta] valid amount of bracket '))((' is 2
-     [Beta] valid amount of bracket '))()((' is 3
-     */
-
     public static void main(String[] args) {
         String[] sample = {"()", "()()()", "((()()", "))((", "))()(("};
 
