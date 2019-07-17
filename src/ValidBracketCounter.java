@@ -3,13 +3,12 @@ import java.util.Stack;
 public class ValidBracketCounter {
 
     public static void main(String[] args) {
-        String[] sample = {"()", "()()()", "((()()", "))((", "))()(("};
+        String[] sample = {"()", "()()()", "((()()", ")())))((", "))()(("};
 
         for (int i = 0; i<sample.length; i++) {
             System.out.println("[Prod] valid amount of bracket '" + sample[i] +"' is " + counter(sample[i]));
         }
-
-
+        System.out.println("");
         for (int i = 0; i<sample.length; i++) {
             System.out.println("[Beta] valid amount of bracket '" + sample[i] +"' is " + counterBetaVersion(sample[i]));
         }
@@ -38,19 +37,19 @@ public class ValidBracketCounter {
     }
 
     static int counterBetaVersion(String s) {
-        int result = 0;
-        char[] charArray = s.toCharArray();
-        Stack<Character> stack = new Stack<>();
-
         int stackCounter = 0;
+        int matchCounter = 0;
+        char[] charArray = s.toCharArray();
 
         for (char ch : charArray) {
             if (ch == '(') {
                 stackCounter++;
-            } else if (ch == ')') {
+            } else if (ch == ')' && stackCounter > 0) {
                 stackCounter--;
+                matchCounter++;
             }
         }
-        return result = (s.length() - Math.abs(stackCounter)) / 2;
+        //return (s.length() - Math.abs(stackCounter)) / 2;
+        return matchCounter;
     }
 }
